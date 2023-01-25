@@ -1,5 +1,7 @@
 import React from "react";
-import { FaAngleDown, FaBars } from "react-icons/fa";
+import { FaAngleDown, FaBars, FaShoppingCart } from "react-icons/fa";
+import PIcon from "../images/publix-IconPic.png";
+import SearchBar from "./SearchBar";
 
 const Header = (props) => {
     return (
@@ -11,7 +13,14 @@ const Header = (props) => {
                 <div style={style.promotion}>{props.promotionTitle}</div>
             </div>
             <div style={style.secBarCont}>
-                <FaBars />
+                <button style={style.navMenu}>
+                    <FaBars />
+                </button>
+                <img src={PIcon} alt='icon-Pic' style={style.PIcon} />
+                <div style={style.searchInputCont}>
+                    <SearchBar />
+                </div>
+                <FaShoppingCart />
             </div>
         </header>
     );
@@ -48,5 +57,28 @@ const style = {
     },
 
     //!        Second Bar
-    secBarCont: {},
+    secBarCont: {
+        border: ".05rem solid gray",
+        height: "2.5rem",
+    },
+
+    navMenu: {
+        border: "none",
+        backgroundColor: "white",
+        marginTop: ".8rem",
+        Height: "2rem",
+        width: "2rem",
+    },
+
+    PIcon: {
+        Height: "1rem",
+        width: "1rem",
+    },
+
+    searchInputCont: {
+        display: "inline-block",
+        margin: "0 auto",
+        marginLeft: ".5rem",
+        marginRight: "1rem",
+    },
 };
