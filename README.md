@@ -1,4 +1,4 @@
-# Project Public Clone
+# Project Publix Clone
 
 # Details:
 
