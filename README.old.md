@@ -5,7 +5,7 @@
 Branches:
 
 1. Components 
-    - [ ] Top Header - Assigned to Jordin
+    - [ ] Top Header - Assigned to Jordan
     - [ ] Navigation - 
     - [ ] Inputs - 
     - [ ] Cards - 
